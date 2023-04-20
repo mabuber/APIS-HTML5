@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="Style.css" />
+    <title> API's de HTML5</title>
+  </head>
+
+  <body>
+    <div class="container">
+
+      <div class="archive">
+          <form action="../../form-result.php" method="post" enctype="multipart/form-data" target="_blank">
+            <h3>Sube tu vídeo:</h3>
+            <input name="archive" id="videoFile" type="file" accept=".webm,.mp4,.ogv"/>
+          </form>
+      </div>
+
+      <div class="video">
+        <video id="video" controls width="854" height="480" accept=".webm,.mp4,.ogv">Your browser does not support the video tag.</video>
+      </div>
+
+      <div class="buttons">
+        <button onclick="document.getElementById('video').play();">Play</button>
+        <button onclick="document.getElementById('video').pause();">Pause</button>
+        <button onclick="document.getElementById('video').volume += 0.1;">Volume Up</button>
+        <button onclick="document.getElementById('video').volume -= 0.1;">Volume Down</button>
+      </div>
+
+    </div>
+    <script type="text/javascript" src="Index.js"></script>
+  </body>
+</html>
